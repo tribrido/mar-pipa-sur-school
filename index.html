@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mar Pipa Surf – Aulas de Surf em Pipa/RN</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,400&family=DM+Sans:wght@300;400;500&family=Space+Mono&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./styles.css" />
+
+  <!-- Google Calendar Scheduling Button (opcional, só funciona se você usar o botão oficial) -->
+  <link rel="stylesheet" href="https://calendar.google.com/calendar/scheduling-button-script.css" />
+</head>
+
+<body>
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav-logo">
+      <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+        <path d="M4 22C8 14 14 10 20 16c4 4 8-2 8-6" stroke="#57b4d4" stroke-width="2.5" stroke-linecap="round"/>
+        <path d="M4 26c6-6 12-4 18-6 4-2 6 2 6 6" stroke="rgba(87,180,212,.4)" stroke-width="1.5" stroke-linecap="round"/>
+        <circle cx="20" cy="12" r="3" fill="#e8724a"/>
+      </svg>
+
+      <div class="nav-brand">
+        Mar Pipa
+        <span>Surf School</span>
+      </div>
+    </div>
+
+    <div class="nav-right">
+      <a href="https://instagram.com/marcelonibas" target="_blank" rel="noopener" class="nav-ig" aria-label="Instagram Mig Ferro Surf">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <rect x="2" y="2" width="20" height="20" rx="5"/>
+          <circle cx="12" cy="12" r="4"/>
+          <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+        </svg>
+        Instagram
+      </a>
+
+      <a href="#agenda" class="btn btn-pill btn-primary">Agendar</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header id="hero" class="hero" role="banner">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="hero-waves" aria-hidden="true">
+      <div class="wave wave-1"></div>
+      <div class="wave wave-2"></div>
+    </div>
+
+    <div class="container hero-content">
+      <div class="hero-eyebrow">Praia da Pipa · Rio Grande do Norte</div>
+      <h1 class="hero-title">Aulas de <em>Surf</em></h1>
+      <p class="hero-sub">
+        Aprenda a surfar com segurança e técnica nas águas de Pipa.
+        Do seu primeiro takeoff à evolução contínua com acompanhamento do instrutor em cada onda.
+      </p>
+
+      <div class="hero-cta">
+        <a href="#agenda" class="btn btn-pill btn-primary-large">Marcar minha aula</a>
+        <a href="#info" class="btn btn-secondary">Saber mais ↓</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- AGENDA -->
+    <section id="agenda" class="section">
+      <div class="container">
+        <div class="section-label">Agendar aula</div>
+        <h2 class="section-title">Escolha seu horário</h2>
+        <p class="section-sub">Reserve diretamente no calendário. Confirmação automática por e-mail.</p>
+
+        <div class="agenda-card fade-in">
+          <div class="agenda-card-title">Agendamento online</div>
+          <div class="agenda-card-sub">Google Calendar</div>
+
+          <!-- Botão oficial (renderizado via JS, se disponível) -->
+        <div id="gcal-booking-btn" aria-label="Botão de agendamento"></div> 
+      <div class="confirm-inline" role="alert" aria-live="polite">
+  <div class="confirm-inline__left">
+    <div class="confirm-inline__icon" aria-hidden="true">✓</div>
+    <div class="confirm-inline__text">
+      <strong>Após agendar</strong>, confirme <span>valor</span>, <span>local</span> e <span>disponibilidade</span> no WhatsApp.
+    </div>
+  </div>
+
+  <a class="confirm-inline__btn" id="whats-confirm-btn" href="#" target="_blank" rel="noopener">
+    Confirmar no WhatsApp
+  </a>
+</div>
+</a>
+
+          <p class="agenda-note">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M12 16v-4M12 8h.01"/>
+            </svg>
+            Você receberá confirmação automática no seu e-mail
+          </p>
+
+          <!-- Fallback -->
+          <p class="agenda-fallback">
+            Se o botão não carregar, <a id="gcal-booking-link" href="#" target="_blank" rel="noopener">clique aqui para agendar</a>.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- INFO -->
+ <section id="info" class="section">
+  <div class="container">
+    <div class="section-label">Sobre as aulas</div>
+    <h2 class="section-title">Tudo que você precisa saber</h2>
+    <p class="section-sub">Aulas para todos os níveis, com segurança e evolução consistente.</p>
+
+    <div class="info-wrap fade-in">
+      <button class="info-btn info-left" type="button" aria-label="Anterior">‹</button>
+
+      <div class="info-scroll" id="info-scroll" aria-label="Informações das aulas (carrossel)">
+        <article class="info-card-h">
+          <div class="info-ic" aria-hidden="true">🏄</div>
+          <div class="info-content">
+            <h3 class="info-title">Níveis</h3>
+            <p class="info-text">Iniciante e intermediário. Conteúdo ajustado à sua experiência.</p>
+            <div class="info-tags">
+              <span class="info-pill">Iniciante</span>
+              <span class="info-pill">Intermediário</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="info-card-h">
+          <div class="info-ic" aria-hidden="true">⏱️</div>
+          <div class="info-content">
+            <h3 class="info-title">Duração</h3>
+            <p class="info-text">1h ou 1h30, conforme nível e condições do mar.</p>
+            <div class="info-tags">
+              <span class="info-pill">1h</span>
+              <span class="info-pill">1h30</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="info-card-h">
+          <div class="info-ic" aria-hidden="true">📦</div>
+          <div class="info-content">
+            <h3 class="info-title">Incluso</h3>
+            <p class="info-text">Prancha + acompanhamento do instrutor no mar e segurança.</p>
+          </div>
+        </article>
+
+        <article class="info-card-h">
+          <div class="info-ic" aria-hidden="true">🎒</div>
+          <div class="info-content">
+            <h3 class="info-title">O que levar</h3>
+            <p class="info-text">Protetor, roupa de banho e água. Opcional: toalha e chinelo.</p>
+          </div>
+        </article>
+
+        <article class="info-card-h">
+          <div class="info-ic" aria-hidden="true">📍</div>
+          <div class="info-content">
+            <h3 class="info-title">Local</h3>
+            <p class="info-text">Praia de Pipa (RN). Ponto exato confirmado após agendar.</p>
+            <div class="info-tags">
+              <span class="info-pill">Pipa · RN</span>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <button class="info-btn info-right" type="button" aria-label="Próximo">›</button>
+    </div>
+  </div>
+</section>
+
+    <!-- INSTAGRAM -->
+    <section id="instagram" class="section">
+      <div class="container">
+        <div class="section-label">Instagram</div>
+        <h2 class="section-title">Veja as aulas em ação</h2>
+
+        <div class="ig-wrapper fade-in">
+          <button class="ig-btn ig-left" type="button" aria-label="Anterior">‹</button>
+
+          <div class="ig-scroll" id="ig-scroll" aria-label="Carrossel do Instagram">
+
+                <a class="ig-card" href="https://www.instagram.com/p/C5MjastPEbu/" target="_blank" rel="noopener">
+                    <img src="./img/instagram/post1.jpg" alt="Aula de surf em Pipa">
+                </a>
+
+                <a class="ig-card" href="https://www.instagram.com/p/C5W_mMdto0H/" target="_blank" rel="noopener">
+                    <img src="./img/instagram/post2.jpg" alt="Aluno surfando em Pipa">
+                </a>
+
+                <a class="ig-card" href="https://www.instagram.com/p/C5bas66r4nP/" target="_blank" rel="noopener">
+                    <img src="./img/instagram/post4.jpg" alt="Instrutor de surf Mig Ferro">
+                </a>
+
+            </div>
+
+          <button class="ig-btn ig-right" type="button" aria-label="Próximo">›</button>
+        </div>
+
+        <a href="https://instagram.com/marcelonibas" target="_blank" rel="noopener" class="btn btn-round btn-ig">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <rect x="2" y="2" width="20" height="20" rx="5"/>
+            <circle cx="12" cy="12" r="4"/>
+            <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+          </svg>
+          Ver perfil no Instagram
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          Mar Pipa
+          <span>Escola de Surf</span>
+          <span>PIPA - RN - BR</span>
+        </div>
+
+        <nav class="footer-links" aria-label="Links do rodapé">
+          <a href="#agenda">Agendar</a>
+          <a href="#info">Sobre</a>
+          <a href="https://instagram.com/marcelonibas" target="_blank" rel="noopener">Instagram</a>
+        </nav>
+      </div>
+
+      <div class="footer-divider" aria-hidden="true"></div>
+
+      <div class="footer-bottom">
+        <span class="footer-copy">© <span id="year"></span> Mig Ferro Surf</span>
+        <span class="footer-loc">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+            <circle cx="12" cy="10" r="3"/>
+          </svg>
+          Praia de Pipa · Rio Grande do Norte
+        </span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Google Calendar Scheduling Button JS (opcional) -->
+  <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
+
+  <!-- JS local -->
+  <script src="./script.js" defer></script>
+</body>
+</html>
