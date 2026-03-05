@@ -168,17 +168,17 @@ body {
 }
 .agenda-note {
   text-align: center; margin-top: 0.8rem;
-  font-size: 0.75rem; color: rgba(255,255,255,0.35);
+  font-size: 0.75rem; color: rgb(235, 87, 2);
   display: flex; align-items: center; justify-content: center; gap: 0.3rem;
 }
 .agenda-fallback {
   margin-top: 1rem;
   text-align: center;
   font-size: 0.8rem;
-  color: rgba(255,255,255,0.55);
+  color:   rgb(235, 87, 2);
 }
-.agenda-fallback a { color: var(--ocean-light); }
-.agenda-fallback a:hover { color: var(--sunset-warm); }
+.agenda-fallback a { color: #1a5f7a}
+.agenda-fallback a:hover { color: rgb(235, 87, 2); }
 /* WhatsApp confirm – premium inline (para fundo escuro) */
 .confirm-inline{
   margin-top: 1.1rem;
@@ -593,4 +593,10 @@ body {
   .ig-card{
     min-width: 75vw;
   }
+}
+.confirm-inline__text ul{
+  margin-top:6px;
+  padding-left:18px;
+  font-size:0.85rem;
+  line-height:1.5;
 }

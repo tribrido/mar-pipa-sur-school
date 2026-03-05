@@ -86,20 +86,29 @@
           <div class="agenda-card-sub">Google Calendar</div>
 
           <!-- Botão oficial (renderizado via JS, se disponível) -->
-        <div id="gcal-booking-btn" aria-label="Botão de agendamento"></div> 
-      <div class="confirm-inline" role="alert" aria-live="polite">
+<div id="gcal-booking-btn"></div>
+
+<div class="confirm-inline">
+
   <div class="confirm-inline__left">
-    <div class="confirm-inline__icon" aria-hidden="true">✓</div>
     <div class="confirm-inline__text">
-      <strong>Após agendar</strong>, confirme <span>valor</span>, <span>local</span> e <span>disponibilidade</span> no WhatsApp.
+      <strong>Após agendar no calendário</strong>, confirme sua aula pelo WhatsApp.
+
+      <ul>
+        <li>Informe o horário escolhido</li>
+        <li>Confirme o preço da aula</li>
+        <li>Verifique disponibilidade do instrutor</li>
+        <li>Confirme condições do mar e ponto de encontro</li>
+      </ul>
     </div>
   </div>
 
-  <a class="confirm-inline__btn" id="whats-confirm-btn" href="#" target="_blank" rel="noopener">
-    Confirmar no WhatsApp
+  <a class="confirm-inline__btn" id="whats-confirm-btn" href="#" target="_blank">
+    <strong>Confirmar no WhatsApp</strong>
   </a>
+
 </div>
-</a>
+</div>
 
           <p class="agenda-note">
             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
