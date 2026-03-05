@@ -28,7 +28,7 @@ Assim é possível alinhar rapidamente:
 ![Agenda](screenshots/agenda.png)
 
 ### Galeria
-![Instagram](screenshots/instagram.png)
+![Instagram](screenshots/sobre.png)
 
 ### Mobile
 ![Mobile](screenshots/mobile.png)
