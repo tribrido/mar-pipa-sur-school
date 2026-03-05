@@ -27,11 +27,8 @@ Assim é possível alinhar rapidamente:
 ### Agendamento
 ![Agenda](screenshots/agenda.png)
 
-### Galeria
+### Sobre
 ![Instagram](screenshots/sobre.png)
-
-### Mobile
-![Mobile](screenshots/mobile.png)
 
 ## Tecnologias
 
