@@ -2,11 +2,11 @@
    CONFIG
 =========================== */
 const CONFIG = {
-  gcalBookingUrl: "https://calendar.app.google/ozYzvBZLeGH7XETDA",
+  gcalBookingUrl: "https://calendar.app.google/x5CmzMjfJHdPk5wH9",
   fadeInThreshold: 0.1,
 };
 const WHATSAPP = {
-  phoneE164: "55SEUNUMEROAQUI", // ex: 5584999999999 (DDD + número)
+  phoneE164: "5516993733143", // ex: 5584999999999 (DDD + número)
   baseMessage:
     "Oi! Acabei de agendar uma aula pelo site. Pode confirmar, por favor:\n" +
     "• Valor da aula\n" +
