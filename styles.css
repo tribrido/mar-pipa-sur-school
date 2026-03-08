@@ -31,7 +31,7 @@ body {
 }
 
 /* UTILITY */
-.container { max-width: 1080px; margin: auto; }
+.container { max-width: 100%; margin: auto; }
 
 .fade-in {
   opacity: 0;
@@ -340,10 +340,20 @@ body {
   overflow-x: auto;
   overscroll-behavior-x: contain;
   scroll-behavior: smooth;
-  width: 100%;
+  width: fit-content;
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
+}
+
+#ig-scroll{
+  width:100vw;
+  height:100svh;
+  padding:2rem;
+  display:flex;
+  gap:1rem;
+  overflow-x:auto;
+  align-items:center;
 }
 .info-scroll { padding: 0.25rem 0; }
 .ig-scroll { padding: 1rem 0; }
@@ -449,10 +459,12 @@ body {
   display: flex;
   align-items: center;
   margin-top: 2rem;
+  width: fit-content;
+
 }
 .ig-card {
   min-width: 260px;
-  height: 320px;
+  height: 80%;
   aspect-ratio: 4 / 5;
   flex: 0 0 auto;
   border-radius: 16px;
@@ -547,9 +559,10 @@ body {
 .footer-loc { font-size: 0.75rem; color: rgba(255, 255, 255, 0.35); display: flex; align-items: center; gap: 0.3rem; }
 
 /* MEDIA */
-@media (min-width: 640px) {
+@media (min-width: 600px) {
   .info-grid { grid-template-columns: repeat(3, 1fr); }
   .info-card.wide { grid-column: span 1; }
+  scr
 }
 
 @media (max-width: 520px) {
