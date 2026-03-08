@@ -2,7 +2,7 @@
    CONFIG
 =========================== */
 const CONFIG = {
-  gcalBookingUrl: "https://calendar.app.google/x5CmzMjfJHdPk5wH9",
+  gcalBookingUrl: "https://calendar.app.google/x5CmzMjfJHdPk5wH9", // ex: "https://calendar.app.google/xxxxxx" (link do evento de agendamento)
   fadeInThreshold: 0.1,
 };
 const WHATSAPP = {
